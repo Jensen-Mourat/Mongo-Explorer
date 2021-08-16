@@ -82,7 +82,6 @@ const checkPossibleArgs = (args) => {
 }
 const checkArgs = async () => {
     delete args._
-    console.log(args)
     checkPossibleArgs(args);
     checkIncompatibleArgs(args, [
         ['a', 'c'],
@@ -296,7 +295,9 @@ const checkCollections = async (collections, client) => {
     } else {
         collection = searchAllCollections ? undefined : await selectPrompt('choose collection:', [ALL_COLLECTION, ...collections])
     }
-    if (!collections.includes(collection)) {
+    console.log({collections, searchAllCollections, collection})
+
+    if (!searchAllCollections && !collections.includes(collection)) {
         throw new Error('invalid collection')
     }
     if (collection === ALL_COLLECTION) {
@@ -371,7 +372,11 @@ const checkCollections = async (collections, client) => {
         } catch (e) {
             console.error('Failed to write to ' + defaultLogPath)
         }
-        if (!defaultId && !searchAllCollections && !defaultCollection) await checkCollections(collections, client)
+        if (!defaultId && !searchAllCollections && !defaultCollection) {
+            await checkCollections(collections, client)
+        } else {
+            exit()
+        }
     }
 }
 
