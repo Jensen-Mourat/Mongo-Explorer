@@ -47,14 +47,14 @@ you will be prompted to enter your database uri and database name:
    Your database uri: (as mongodb://<user>:<password>@127.0.0.1:27017/<db> »
    enter a database name:
 ```
- You will be prompted to save the details as default, if you choose to same the you will be asked to use the default values everytime you run mongo-explorer.
+ You will be prompted to save the details as default. You will be asked to use the default values everytime you run mongo-explorer.
  You can also use `-a` to use default values automatically.
 
-Then you will be asked to choose your collection. Choose `* all collections *` will search in every collection. 
-Useful when you do not know in which collection your object is. Adding the command `--allCollections` will do that automatically.
+Then you will be asked to choose in which collection to search. Choosing `* all collections *` will search in every collection. 
+This is useful when you do not know in which collection your object is. Adding the command `--allCollections` will do that automatically.
 
-Then you will be prompted to input the ObjectId, and the at which depth mongo-explorer should stop populating references (lower the depth, faster the result)
+Then you will be prompted to input the ObjectId, and at which depth mongo-explorer should stop populating references (lower the depth, faster the result)
 
-Since arrays are requires a lot of processing to resolve, its depth of resolution is set to 1 by default.
-This can be changed using `--arrayDepth` command. The `--arrayLength` command when specified will just truncate any array to the length specified, again to reduce processing.
+Since arrays are requires a lot of processing to resolve, their depth of resolution is set to 1 by default.
+This can be changed using `--arrayDepth` command. The `--arrayLength` command when specified will truncate any array to the length specified, again to reduce processing.
     
