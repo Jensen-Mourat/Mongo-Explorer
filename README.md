@@ -10,17 +10,17 @@ Not sure if your new code wrote data correctly in your Mongo database, and you a
 
 ## Commands
 
-    -h : help
-    -c: delete the config file
+    -h: help
+    -c: delete the config file containing the default values
     -a: always use all default values, you will need to use -c to set new values
-    -d: usage: -d=x where x will be the default depth for search
+    -d: usage: -d=x where x will be the default depth to populate the result
     -p: usage -p=<PATH> where <PATH> points to the folder the result file will be written
-    --arrayLength: usage: --arrayLength=x where x will be the length of array resolved, default = full length of the array
-    --arrayDepth: usage: --arrayDepth=x where x will be the depth at which an object in an array will be resolved, default: 1
-    --noConsole: does not print the results on the console, but writes it at
-    --setPath: set and save a default logs path
-    --useDefaultPath: deletes any path set previously and uses default path ' + defaultLogPath)
-    --allCollections: searches all collection
+    --arrayLength: usage: --arrayLength=x where x will be the length of any array resolved, default = full length of the array
+    --arrayDepth: usage: --arrayDepth=x where x will be the depth at which an object in an array will be resolved, default = 1
+    --noConsole: does not print the results on the console, but writes it at the default or specified path
+    --setPath: set and save a default path for the result log
+    --useDefaultPath: deletes any path which was set previously and uses the default path
+    --allCollections: searches in all collection
     --collection: a collection to search in
     --id: the ObjectId to search for
 
