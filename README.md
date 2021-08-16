@@ -2,7 +2,7 @@
 Not sure if your new code wrote data correctly in your Mongo database, and you are tired of using MongoDB compass (or writing queries) to check if your data as well as the references are set correctly?
 <br><br>Mongo-Explorer is here to help. 
 <br><br>Just configure it and checking your database will be blazing fast! The best is that Mongo-Explorer populates the references automatically! 
-<br>No more copy and pasting a reference in a new query\compass to check if it's the correct reference.
+<br>No more copy and pasting a reference id in a new query\compass to check if it's the correct reference.
 
 ## Installation
 
