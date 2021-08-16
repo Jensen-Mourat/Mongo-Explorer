@@ -26,5 +26,9 @@
     "minimist": "^1.2.5",
     "mongodb": "^3.6.9",
     "prompt-sync": "^4.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/Jensen-Mourat/Mongo-Explorer",
+    "type": "git"
   }
 }
