@@ -1,6 +1,6 @@
 {
   "name": "mongo_explorer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "An easy to use and blazing fast mongodb viewer which automatically resolves referenced Objectids. For those tired of using mongodb compass and endlessly copying and querying references to check if your database objects were correctly created and referenced",
   "main": "index.js",
   "scripts": {
