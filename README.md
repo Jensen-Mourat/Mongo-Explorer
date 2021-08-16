@@ -26,7 +26,7 @@ Not sure if your new code wrote data correctly in your Mongo database, and you a
 
 ## Example Usage
 
-``` mongo-explorer -a -d=1 --arrayDepth=2 --id=60c343babb35c357f42e7cb6 --allCollections```
+``` mongo-explorer -a -d=1 --id=60c343babb35c357f42e7cb6 --allCollections```
 
 ## Getting Started
 You will need a mongo database instance running! 
