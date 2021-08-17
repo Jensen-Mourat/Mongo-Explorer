@@ -295,8 +295,6 @@ const checkCollections = async (collections, client) => {
     } else {
         collection = searchAllCollections ? undefined : await selectPrompt('choose collection:', [ALL_COLLECTION, ...collections])
     }
-    console.log({collections, searchAllCollections, collection})
-
     if (!searchAllCollections && !collections.includes(collection)) {
         throw new Error('invalid collection')
     }
