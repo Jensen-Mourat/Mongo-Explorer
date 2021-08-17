@@ -55,6 +55,9 @@ This is useful when you do not know in which collection your object is. Adding t
 
 Then you will be prompted to input the ObjectId, and at which depth mongo-explorer should stop populating references (lower the depth, faster the result)
 
-Since arrays are requires a lot of processing to resolve, their depth of resolution is set to 1 by default.
+Since arrays are usually lengthy, they require a lot of processing to resolve that is why their depth of resolution is set to 1 by default.
 This can be changed using `--arrayDepth` command. The `--arrayLength` command when specified will truncate any array to the length specified, again to reduce processing.
-    
+
+### Like this program?
+
+A star on github or a message of how this program helped you is always appreciated!
